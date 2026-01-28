@@ -30,7 +30,7 @@ form.addEventListener('submit',(e)=>{
     }).then(
         response => response.json()
     ).then((html)=>{
-         bod.style.cssText="background: url('images/confetis.gif')";
+         bod.style.cssText="background: url('confetis.gif')";
          form.style.cssText='visibility: hidden; display: none;';
         setTimeout(() =>{
             bod.style.cssText="background: none";

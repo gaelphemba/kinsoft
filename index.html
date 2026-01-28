@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kinsoft inscription</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body id="bod">
+    <!-- container -->
+    <div class="container">
+        <!-- login -->
+        <div class="form-box login">
+            <form action="#" style="display: flex; flex-direction: column; justify-content: center;">
+                <h1 style="text-align: center">  après: confirmer l'inscription</h1>
+                <div class="input-box">
+                    <p style="text-align: center;">faites une capture d'ecran du code QR puis<br> allez au lieu ou se trouve le centre <br>avec votre piece d'identité <br> et l'argent demandé</p>
+                </div>
+
+                <div id="qrcode" style="text-align: center; overflow: hidden;"></div>
+                <!-- <button type="submit" class="btn">Login</button> -->
+            </form>
+        </div>
+        <!-- registration -->
+        <div class="form-box register" style="overflow-y: scroll;">
+            <form id="formula" action="https://sheetdb.io/api/v1/6g1rjd85enflf" method="post">
+                <h1 style="text-align: center;">inscription</h1>
+                <div class="input-box">
+                    <input type="text" name="data[NOM]" placeholder="nom" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" name="data[POSTNOM]" placeholder="postnom" required>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" id="firstname" name="data[PRENOM]" placeholder="prenom" required>
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="number" name="data[PHONE]" placeholder="numero telephone" required>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="input-box">
+                    <select name="data[COURS]" id="">
+                        <option value="modelisation_3D_blender">modelisation 3D avec blender</option>
+                        <option value="application_mobile_flutter">creation application mobile</option>
+                        <option value="programmation_web">programmation web</option>
+                        <option value="creation_jeu_video">creation jeu video</option>
+                    </select>
+                </div>
+                
+                <div class="input-box">
+                    <select name="data[VACATION]" id="">
+                        <option value="10h à 12h">vacation 9h à 12h</option>
+                        <option value="13h à 15h">vacation 13h à 15h</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="sub" class="btn registerBtn">Enregistrement</button>
+            </form>
+        </div>
+        <!-- toggle box -->
+        <div class="toggle-box">
+            <!-- toggle box left -->
+            <div class="toggle-panel toggle-left">
+                <h1>BIENVENU</h1>
+                <p style="text-align: center;">Inscrivez <br>en remplissant le formulaire</p>
+                <!-- <button class="btn register-btn">Enregistrement</button> -->
+            </div>
+            <!-- toggle box right -->
+            <div class="toggle-panel toggle-right">
+                <h1>Felicitations</h1>
+                <p style="text-align: center;">vous êtes maintenant considerez en tant que <br> participant</p>
+                <!-- <button class="btn login-btn">Confirmation</button> -->
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="script.js"></script>
+</html>

@@ -35,9 +35,8 @@ form.addEventListener('submit',(e)=>{
         setTimeout(() =>{
             bod.style.cssText="background: none";
             alert("Enregistrement terminée!! 😃​ Merci​ "+document.getElementById("firstname").value+" veillez passer au centre");
-            setTimeout(()=>{
-                window.location.replace("https://www.google.com");
-            },10000);
+
         }, 1350);
     });
+
 });

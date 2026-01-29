@@ -9,7 +9,7 @@ registerBtn.addEventListener("click",()=>{
     container.classList.add("active");
 
     new QRCode(document.getElementById("qrcode"), {
-        text: "https://kinsoft.netlify.app/validation.html",
+        text: "https://kinsoft.netlify.app",
         width: 200,
         height: 200,
         colorDark: "#000000",
@@ -40,6 +40,7 @@ form.addEventListener('submit',(e)=>{
     });
 
 });
+
 
 
 

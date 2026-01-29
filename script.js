@@ -34,12 +34,13 @@ form.addEventListener('submit',(e)=>{
          form.style.cssText='visibility: hidden; display: none;';
         setTimeout(() =>{
             bod.style.cssText="background: none";
-            alert("Enregistrement terminée!! \n 😃​Merci​ "+document.getElementById("firstname").value+"\n veillez contacter le \n 082 99 61 765 \n\n la formation debutera au mois de Mars");
+            alert("Enregistrement terminée!! 😃​Merci​ "+document.getElementById("firstname").value+" veillez contacter le 082 99 61 765  la formation debutera au mois de Mars");
 
         }, 1350);
     });
 
 });
+
 
 
 

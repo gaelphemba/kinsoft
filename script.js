@@ -19,7 +19,7 @@ registerBtn.addEventListener("click",()=>{
 
     
     // btn.style.cssText='visibility: hidden; display: none;';
-    document.getElementById("qrcode").style.cssText="display: flex;justify-content: center; align-items: center;";
+    document.getElementById("qrcode").style.cssText="display: flex;justify-content: center; align-items: center; background-repeat: no-repeat;";
 });
 
 form.addEventListener('submit',(e)=>{
@@ -40,6 +40,7 @@ form.addEventListener('submit',(e)=>{
     });
 
 });
+
 
 
 

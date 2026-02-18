@@ -10,8 +10,8 @@ registerBtn.addEventListener("click",()=>{
 
     new QRCode(document.getElementById("qrcode"), {
         text: "https://kinsoft.netlify.app",
-        width: 200,
-        height: 200,
+        width: 170,
+        height: 170,
         colorDark: "#000000",
         colorLight: "#ffffff",
         correctLevel: QRCode.CorrectLevel.H
@@ -19,7 +19,7 @@ registerBtn.addEventListener("click",()=>{
 
     
     // btn.style.cssText='visibility: hidden; display: none;';
-    document.getElementById("qrcode").style.cssText="display: flex;justify-content: center; align-items: center; background-repeat: no-repeat;";
+    document.getElementById("qrcode").style.cssText="display: flex;justify-content: center; align-items: center; background-repeat: no-repeat; overflow: hidden;";
 });
 
 form.addEventListener('submit',(e)=>{
@@ -40,6 +40,7 @@ form.addEventListener('submit',(e)=>{
     });
 
 });
+
 
 
 
